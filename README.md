@@ -48,6 +48,11 @@ assumption.
 
 Four OpenML tabular datasets, 10 seeds, three students, MLP and GBM teachers.
 
+*Every figure in this section is read from the tables currently in `paper/`.
+After a re-run, regenerate those tables and update this section in the same
+commit. `Table 8` of the report states the configuration the numbers actually
+came from, so it is the check on whether the two agree.*
+
 **The bound holds in 39 of the 40 cells where it applies.** The single failure
 is one bank-marketing seed, where `Δ = 0.809` leaves the least slack to absorb
 the sampling error in the two estimated quantities the test is built from. We
@@ -76,21 +81,27 @@ seed retrains the teacher as well as the student, that bounds how much of any
 single run's explanation is a property of the task rather than of the draw, and
 no amount of distillation fidelity can lift it.
 
-### Status of the shipped numbers
+### Protocol
 
-The tables currently in `paper/` came from **10 seeds at a reduced
-configuration** (5 teacher epochs, Monte-Carlo base `N=256`, screening `m=12`,
-8-point λ path). Two components did not run, and the paper says so in the text
-rather than quietly omitting them:
+The reported grid is the **rigorous configuration**: **10 seeds**, **50 teacher
+epochs**, Monte-Carlo reference base `N=4096`, screening `m=24`, a 14-point λ
+path, `|Z|=12000` queries per cell, 8000 held-out samples from `μ`, 1000
+bootstrap resamples, and budget-matched baselines. That is
+`RunConfig().to_rigorous()` verbatim; `Table 8` in the report is emitted from
+the run records rather than retyped, so it is the authority on what actually
+ran.
 
-| Gap | Cause | Effect |
-|---|---|---|
-| GA²M baseline absent | `interpret-core` not installed | A depth-2 boosted-tree substitute ran. Those rows are labelled `Gbm-add`, not GA²M. |
-| KernelSHAP absent | `shap` not installed | The post-hoc reference columns are empty. |
-| Reduced `N` | quick config | Most likely cause of the one certificate failure. |
+Four datasets × {ρ=0, 0.25, 0.5, 1} × {MLP, GBM} × 10 seeds, with the main
+tables at ρ=0.5 and the MLP teacher.
 
-Both dependencies are installed by the notebook's first cell and both now warn
-loudly at run time. Re-running at `to_rigorous()` closes all three.
+> **Numbers below and in `paper/` must come from the same run.** Every figure
+> quoted in [Results](#results) is emitted by `pact/tables.py` and
+> `pact/figures.py` from the run records. If you re-run the grid, regenerate
+> both and paste the tables over the inlined blocks in `paper/main.tex`; do not
+> hand-edit a value. `tools/audit_records.py` exits non-zero if the records you
+> are about to aggregate did not come from one code version and one
+> configuration, which is the failure mode that produced a published table
+> reporting "seeds: 2" beside paired tests with n=10.
 
 ---
 
