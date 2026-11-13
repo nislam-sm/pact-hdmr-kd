@@ -1,0 +1,27 @@
+\begin{table}[t]
+\caption{Full configuration and measured wall-clock, emitted directly from the run records.}
+\label{tab:hparams}
+\begin{center}\footnotesize
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Setting} & \textbf{Value} \\
+\midrule
+datasets & bank-marketing, credit-default, gas-drift, musk v2 \\
+seeds & 2 \\
+teacher epochs & 5 \\
+teacher hidden & [256, 128, 64] \\
+PCE degree $p$ / $q$-norm & 4 / 0.9 \\
+screening $m$ & 12 \\
+interaction penalty $\gamma$ & 2.0 \\
+$\lambda$ path length & 8 \\
+query size $|Z|$ / $\rho$ & 4000 / 0.5 \\
+MC Sobol' base $N$ & 256 \\
+KernelSHAP explain / background & 40 / 20 \\
+wall-clock bank-marketing (s/cell) & 33\,$\pm$\,15 \\
+wall-clock credit-default (s/cell) & 31\,$\pm$\,14 \\
+wall-clock gas-drift (s/cell) & 130\,$\pm$\,85 \\
+wall-clock musk v2 (s/cell) & 78\,$\pm$\,31 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}

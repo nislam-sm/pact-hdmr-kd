@@ -1,0 +1,27 @@
+\begin{table}[t]
+\caption{Teacher--student fidelity at the operating point ($\rho=0.5$, MLP teacher), mean $\pm$ s.d. over seeds. $\eta_\mu$ is the certified quantity; $\eta_\nu$ and top-1 agreement are the prediction-level numbers the literature reports.}
+\label{tab:fidelity}
+\begin{center}\footnotesize
+\begin{tabular}{@{}llccccc@{}}
+\toprule
+\textbf{Data} & \textbf{Student} & $\eta_\mu\downarrow$ & $\eta_\nu\downarrow$ & \textbf{top-1 agr.}$\uparrow$ & \textbf{JS}$\downarrow$ & \textbf{components} \\
+\midrule
+bank-marketing & \GASPCE\ (ours) & 0.166\,$\pm$\,0.044 & 0.156\,$\pm$\,0.039 & 0.963\,$\pm$\,0.009 & 0.003\,$\pm$\,0.002 & 102\,$\pm$\,18 \\
+ & \SDT & 0.074\,$\pm$\,0.023 & 0.073\,$\pm$\,0.026 & 0.983\,$\pm$\,0.005 & 0.001\,$\pm$\,0.000 & 31\,$\pm$\,0 \\
+ & \GAM & 0.219\,$\pm$\,0.052 & 0.196\,$\pm$\,0.044 & 0.947\,$\pm$\,0.012 & 0.006\,$\pm$\,0.003 & -1\,$\pm$\,0 \\
+\midrule
+credit-default & \GASPCE\ (ours) & 0.264\,$\pm$\,0.050 & 0.180\,$\pm$\,0.038 & 0.946\,$\pm$\,0.017 & 0.002\,$\pm$\,0.001 & 178\,$\pm$\,59 \\
+ & \SDT & 0.073\,$\pm$\,0.010 & 0.051\,$\pm$\,0.007 & 0.985\,$\pm$\,0.003 & 0.000\,$\pm$\,0.000 & 31\,$\pm$\,0 \\
+ & \GAM & 0.380\,$\pm$\,0.055 & 0.225\,$\pm$\,0.040 & 0.916\,$\pm$\,0.020 & 0.003\,$\pm$\,0.002 & -1\,$\pm$\,0 \\
+\midrule
+gas-drift & \GASPCE\ (ours) & 0.436\,$\pm$\,0.038 & 0.215\,$\pm$\,0.045 & 0.756\,$\pm$\,0.034 & 0.073\,$\pm$\,0.025 & 481\,$\pm$\,154 \\
+ & \SDT & 0.208\,$\pm$\,0.112 & 0.162\,$\pm$\,0.105 & 0.894\,$\pm$\,0.068 & 0.015\,$\pm$\,0.011 & 31\,$\pm$\,0 \\
+ & \GAM & 0.623\,$\pm$\,0.020 & 0.253\,$\pm$\,0.049 & 0.639\,$\pm$\,0.033 & 0.129\,$\pm$\,0.036 & -1\,$\pm$\,0 \\
+\midrule
+musk v2 & \GASPCE\ (ours) & 0.278\,$\pm$\,0.076 & 0.159\,$\pm$\,0.051 & 0.949\,$\pm$\,0.014 & 0.013\,$\pm$\,0.007 & 385\,$\pm$\,93 \\
+ & \SDT & 0.108\,$\pm$\,0.052 & 0.069\,$\pm$\,0.022 & 0.982\,$\pm$\,0.008 & 0.001\,$\pm$\,0.000 & 31\,$\pm$\,0 \\
+ & \GAM & 0.540\,$\pm$\,0.012 & 0.200\,$\pm$\,0.038 & 0.890\,$\pm$\,0.011 & 0.042\,$\pm$\,0.016 & -1\,$\pm$\,0 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}

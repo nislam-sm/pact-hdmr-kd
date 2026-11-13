@@ -1,0 +1,14 @@
+# Core (available by default in Google Colab)
+numpy>=1.26
+scipy>=1.11
+pandas>=2.0
+scikit-learn>=1.4
+matplotlib>=3.7
+torch>=2.1
+
+# Dataset access
+openml>=0.14          # transitively used by sklearn.datasets.fetch_openml
+
+# Baseline student + reference explainer
+interpret-core>=0.6   # ExplainableBoostingRegressor = GA2M student
+shap>=0.44            # KernelSHAP on the teacher

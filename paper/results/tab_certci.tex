@@ -1,0 +1,16 @@
+\begin{table}[t]
+\caption{Certificate audit over seeds. ``Holds'' is the exact (Clopper--Pearson) 95\% interval for the hold rate: ten successes out of ten establish a rate above about $0.69$, not $1.00$, and reporting $1.00\pm0.00$ would overstate what ten seeds can show. Tightness and $\hat\eta_\mu$ carry BCa bootstrap intervals over seeds. ``Vacuous'' is the fraction of \emph{testable} seeds with $2\le\Delta<\infty$ -- the bound is sound but asserts no more than the $[0,1]$ range of a normalised index -- and ``floor$>\Delta$'' the fraction where the Monte-Carlo reference, not the bound, limits the comparison. Seeds with $\hat\eta_\mu\ge1$ are a separate state: the theorem's hypothesis fails, so they are neither tested nor counted vacuous, and the ``holds'' denominator shows the testable count against the total.}
+\label{tab:certci}
+\begin{center}\footnotesize
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+\textbf{Data} & \textbf{holds (exact 95\% CI)} & $\hat\eta_\mu$ \textbf{(95\% CI)} & \textbf{tightness (95\% CI)} & \textbf{vacuous} & \textbf{floor}$>\Delta$ \\
+\midrule
+bank-marketing & 9/10 $[0.55,1.00]$ & 0.166 $[0.137,0.189]$ & 0.595 $[0.410,1.005]$ & 0.00 & 0.00 \\
+credit-default & 10/10 $[0.69,1.00]$ & 0.264 $[0.237,0.296]$ & 0.112 $[0.088,0.134]$ & 0.20 & 0.00 \\
+gas-drift & 10/10 $[0.69,1.00]$ & 0.436 $[0.407,0.453]$ & 0.003 $[0.003,0.004]$ & 1.00 & 0.00 \\
+musk v2 & 10/10 $[0.69,1.00]$ & 0.278 $[0.211,0.312]$ & 0.014 $[0.008,0.028]$ & 0.10 & 0.00 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}

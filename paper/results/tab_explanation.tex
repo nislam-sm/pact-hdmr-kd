@@ -1,0 +1,27 @@
+\begin{table}[t]
+\caption{Explanation agreement: each student's total-effect vector against the teacher's Monte-Carlo total Sobol' indices and against global KernelSHAP on the teacher. Spearman $\rho$ and top-10 Jaccard, mean $\pm$ s.d. over seeds.}
+\label{tab:explanation}
+\begin{center}\footnotesize
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+\textbf{Data} & \textbf{Student} & $\rho_s$ vs.\ Sobol' & Jac$_{10}$ vs.\ Sobol' & $\rho_s$ vs.\ SHAP & Jac$_{10}$ vs.\ SHAP \\
+\midrule
+bank-marketing & \GASPCE\ (ours) & 0.761\,$\pm$\,0.107 & 0.702\,$\pm$\,0.112 & --- & --- \\
+ & \SDT & 0.994\,$\pm$\,0.004 & 0.945\,$\pm$\,0.088 & --- & --- \\
+ & \GAM & 0.917\,$\pm$\,0.050 & 0.761\,$\pm$\,0.113 & --- & --- \\
+\midrule
+credit-default & \GASPCE\ (ours) & 0.832\,$\pm$\,0.079 & 0.699\,$\pm$\,0.091 & --- & --- \\
+ & \SDT & 0.994\,$\pm$\,0.005 & 0.964\,$\pm$\,0.077 & --- & --- \\
+ & \GAM & 0.828\,$\pm$\,0.089 & 0.684\,$\pm$\,0.190 & --- & --- \\
+\midrule
+gas-drift & \GASPCE\ (ours) & 0.972\,$\pm$\,0.005 & 0.737\,$\pm$\,0.153 & --- & --- \\
+ & \SDT & 0.986\,$\pm$\,0.027 & 0.827\,$\pm$\,0.126 & --- & --- \\
+ & \GAM & 0.930\,$\pm$\,0.019 & 0.675\,$\pm$\,0.125 & --- & --- \\
+\midrule
+musk v2 & \GASPCE\ (ours) & 0.980\,$\pm$\,0.006 & 0.845\,$\pm$\,0.147 & --- & --- \\
+ & \SDT & 0.991\,$\pm$\,0.016 & 0.945\,$\pm$\,0.088 & --- & --- \\
+ & \GAM & 0.888\,$\pm$\,0.021 & 0.735\,$\pm$\,0.145 & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}

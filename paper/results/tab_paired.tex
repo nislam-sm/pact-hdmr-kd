@@ -1,0 +1,24 @@
+\begin{table}[t]
+\caption{Paired student comparisons on $\eta_\mu$ (lower is better). Within each (dataset, seed) cell all students see the same frozen teacher and the same query set, so differences are paired and seed-to-seed task difficulty cancels. Wilcoxon signed-rank, Holm-corrected over the 12 tests in this table; $\star$ marks $p_{\mathrm{adj}}\le0.05$. Effect size is Cliff's $\delta$. A negative median difference favours the first student.}
+\label{tab:paired}
+\begin{center}\footnotesize
+\begin{tabular}{@{}llccccc@{}}
+\toprule
+\textbf{Data} & \textbf{Comparison} & $n$ & \textbf{median }$\Delta\eta_\mu$ & \textbf{95\% CI} & $p_{\mathrm{adj}}$ & \textbf{effect} \\
+\midrule
+bank-marketing & \GASPCE\ (ours) vs.\ \SDT & 10 & $+0.101$ & $[+0.038,+0.135]$ & 0.029\,$\star$ & large \\
+ & \GASPCE\ (ours) vs.\ \GAM & 10 & $-0.052$ & $[-0.064,-0.051]$ & 0.023\,$\star$ & large \\
+ & \SDT vs.\ \GAM & 10 & $-0.166$ & $[-0.199,-0.150]$ & 0.023\,$\star$ & large \\
+credit-default & \GASPCE\ (ours) vs.\ \SDT & 10 & $+0.181$ & $[+0.147,+0.215]$ & 0.023\,$\star$ & large \\
+ & \GASPCE\ (ours) vs.\ \GAM & 10 & $-0.124$ & $[-0.172,-0.068]$ & 0.023\,$\star$ & large \\
+ & \SDT vs.\ \GAM & 10 & $-0.323$ & $[-0.350,-0.313]$ & 0.023\,$\star$ & large \\
+gas-drift & \GASPCE\ (ours) vs.\ \SDT & 10 & $+0.284$ & $[+0.129,+0.305]$ & 0.029\,$\star$ & large \\
+ & \GASPCE\ (ours) vs.\ \GAM & 10 & $-0.184$ & $[-0.193,-0.175]$ & 0.023\,$\star$ & large \\
+ & \SDT vs.\ \GAM & 10 & $-0.470$ & $[-0.484,-0.461]$ & 0.023\,$\star$ & large \\
+musk v2 & \GASPCE\ (ours) vs.\ \SDT & 10 & $+0.224$ & $[+0.066,+0.241]$ & 0.029\,$\star$ & large \\
+ & \GASPCE\ (ours) vs.\ \GAM & 10 & $-0.229$ & $[-0.311,-0.221]$ & 0.023\,$\star$ & large \\
+ & \SDT vs.\ \GAM & 10 & $-0.446$ & $[-0.463,-0.441]$ & 0.023\,$\star$ & large \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}

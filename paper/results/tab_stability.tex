@@ -1,0 +1,20 @@
+\begin{table}[t]
+\caption{Seed stability of the explanation: mean pairwise Spearman $\rho_s$ and top-10 Jaccard between the per-seed total-effect vectors of one student on one dataset. Nothing but the seed changes between the vectors being compared, so this upper-bounds how much of any explanation is a property of the teacher rather than of the fit. Low $\rho_s$ with high Jaccard is the signature of failure mode (iv), attribution splitting among correlated features.}
+\label{tab:stability}
+\begin{center}\footnotesize
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+\textbf{Data} & \multicolumn{2}{c}{\GASPCE\ (ours)} & \multicolumn{2}{c}{\SDT} & \multicolumn{2}{c}{\GAM} \\
+\cmidrule(lr){2-7}
+ & $\rho_s$ & Jac$_{10}$ & $\rho_s$ & Jac$_{10}$ & $\rho_s$ & Jac$_{10}$ \\
+\midrule
+bank-marketing & 0.73 & 0.70 & 0.81 & 0.72 & 0.85 & 0.72 \\
+credit-default & 0.65 & 0.65 & 0.75 & 0.69 & 0.73 & 0.61 \\
+gas-drift & 0.84 & 0.50 & 0.83 & 0.57 & 0.85 & 0.57 \\
+musk v2 & 0.56 & 0.58 & 0.55 & 0.53 & 0.54 & 0.54 \\
+\bottomrule
+\end{tabular}
+}
+\end{center}
+\end{table}

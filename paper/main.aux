@@ -1,0 +1,166 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{bucilua2006,hinton2015}
+\citation{sobol2001}
+\citation{sudret2008}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\citation{yuan2006}
+\citation{bucilua2006}
+\citation{hinton2015}
+\citation{gou2021}
+\citation{frosst2017}
+\citation{tan2018}
+\citation{lou2012,lou2013}
+\citation{rudin2019}
+\citation{agarwal2021}
+\citation{chang2022}
+\citation{borisov2024}
+\citation{hoeffding1948}
+\citation{sobol2001}
+\citation{rabitz1999}
+\citation{xiu2002}
+\citation{sudret2008}
+\citation{blatman2011}
+\citation{luthen2021}
+\@writefile{toc}{\contentsline {paragraph}{Contributions.}{2}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Part A --- Literature Review}{2}{section.2}\protected@file@percent }
+\newlabel{sec:parta}{{2}{2}{Part A --- Literature Review}{section.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{From compression to transparency.}{2}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Decomposition as the older half of the same idea.}{2}{section*.3}\protected@file@percent }
+\citation{owen2014}
+\citation{lundberg2017,lundberg2020}
+\citation{razavi2021}
+\citation{nauta2023}
+\citation{jacovi2020}
+\citation{hooker2019}
+\citation{adebayo2018}
+\citation{bucilua2006}
+\citation{hinton2015}
+\citation{frosst2017}
+\citation{tan2018}
+\citation{lou2013}
+\citation{agarwal2021}
+\citation{chang2022}
+\citation{ribeiro2016}
+\citation{lundberg2020}
+\citation{sudret2008}
+\citation{blatman2011}
+\citation{luthen2021}
+\citation{hooker2019}
+\citation{nauta2023}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Key studies, compared along the axes that determine whether a surrogate's explanation can be trusted as a statement about the teacher. ``Analytic GSA'' = global sensitivity indices available in closed form from model parameters. ``Guarantee'' = an \emph  {a priori} bound relating surrogate fidelity to explanation error.}}{3}{table.1}\protected@file@percent }
+\newlabel{tab:lit}{{1}{3}{Key studies, compared along the axes that determine whether a surrogate's explanation can be trusted as a statement about the teacher. ``Analytic GSA'' = global sensitivity indices available in closed form from model parameters. ``Guarantee'' = an \emph {a priori} bound relating surrogate fidelity to explanation error}{table.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Two vocabularies for one quantity.}{3}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Evaluating the explanation, not the model.}{3}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Two open problems}{3}{subsection.2.1}\protected@file@percent }
+\newlabel{sec:openproblems}{{2.1}{3}{Two open problems}{subsection.2.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{OP1. Surrogate fidelity is reported at the prediction level, so explanation error is unbounded.}{3}{section*.6}\protected@file@percent }
+\citation{hoeffding1948,sobol2001}
+\citation{owen2014}
+\citation{razavi2021}
+\citation{hooker2019}
+\citation{xiu2002}
+\citation{blatman2011}
+\citation{yuan2006}
+\@writefile{toc}{\contentsline {paragraph}{OP2. The reference measure of a distilled explanation is unspecified, and on real tabular data it cannot be the data distribution.}{4}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Part B --- Method: Polynomial ANOVA Certified Transfer}{4}{section.3}\protected@file@percent }
+\newlabel{sec:method}{{3}{4}{Part B --- Method: Polynomial ANOVA Certified Transfer}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Setup and the reference measure}{4}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Basis and the student}{4}{subsection.3.2}\protected@file@percent }
+\newlabel{eq:student}{{1}{4}{Basis and the student}{equation.3.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Screened hyperbolic truncation.}{4}{section*.8}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The \textsc  {Pact}\ pipeline. The two design decisions that distinguish it from standard transparent distillation are stages~2 and~4: queries are drawn partly from the \emph  {product reference measure} that the ANOVA decomposition is orthogonal under, and the distillation residual measured under that same measure is converted into a bound on the explanation error rather than reported as a goodness-of-fit statistic.}}{5}{figure.1}\protected@file@percent }
+\newlabel{fig:arch}{{1}{5}{The \PACT \ pipeline. The two design decisions that distinguish it from standard transparent distillation are stages~2 and~4: queries are drawn partly from the \emph {product reference measure} that the ANOVA decomposition is orthogonal under, and the distillation residual measured under that same measure is converted into a bound on the explanation error rather than reported as a goodness-of-fit statistic}{figure.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{ANOVA-group lasso.}{5}{section*.9}\protected@file@percent }
+\newlabel{eq:objective}{{2}{5}{ANOVA-group lasso}{equation.3.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Query set and the $\rho $-mixture.}{5}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Reading the explanation off the coefficients}{5}{subsection.3.3}\protected@file@percent }
+\newlabel{eq:sobol}{{3}{5}{Reading the explanation off the coefficients}{equation.3.3}{}}
+\citation{frosst2017}
+\citation{lou2013}
+\citation{tan2018}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}The certificate}{6}{subsection.3.4}\protected@file@percent }
+\newlabel{sec:cert}{{3.4}{6}{The certificate}{subsection.3.4}{}}
+\newlabel{thm:cert}{{1}{6}{Sobol' transfer certificate}{theorem.1}{}}
+\newlabel{eq:cert}{{4}{6}{Sobol' transfer certificate}{equation.3.4}{}}
+\newlabel{cor:rank}{{2}{6}{Certified ranking}{theorem.2}{}}
+\newlabel{prop:measure}{{3}{6}{What $\eta $ must be measured under}{theorem.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Part B --- Experimental protocol}{6}{section.4}\protected@file@percent }
+\newlabel{sec:protocol}{{4}{6}{Part B --- Experimental protocol}{section.4}{}}
+\@writefile{toc}{\contentsline {paragraph}{B1. Datasets.}{6}{section*.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Teachers.}{6}{section*.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{B2. Students (two from the literature, plus ours).}{6}{section*.13}\protected@file@percent }
+\citation{lundberg2017}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Teacher--student fidelity at the operating point ($\rho =0.5$, MLP teacher), mean $\pm $ s.d. over seeds. $\eta _\mu $ is the certified quantity; $\eta _\nu $ and top-1 agreement are the prediction-level numbers the literature reports.}}{7}{table.2}\protected@file@percent }
+\newlabel{tab:fidelity}{{2}{7}{Teacher--student fidelity at the operating point ($\rho =0.5$, MLP teacher), mean $\pm $ s.d. over seeds. $\eta _\mu $ is the certified quantity; $\eta _\nu $ and top-1 agreement are the prediction-level numbers the literature reports}{table.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Metrics.}{7}{section*.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{How 10{} seeds are used.}{7}{section*.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{7}{section.5}\protected@file@percent }
+\newlabel{sec:results}{{5}{7}{Results}{section.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{(a) Fidelity, and who wins.}{7}{section*.16}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces The certificate in practice (\textsc  {Gas-Pce}). $\Delta (\hat  \eta _\mu )=4\hat  \eta _\mu /(1-\hat  \eta _\mu )$ is the guaranteed bound and ``measured'' is $\max _j|T_j(f^{\mathcal  {S}})-T_j(f^{\mathcal  {T}})|$, the quantity in the second half of Eq.~\ref {eq:cert}. The teacher's indices are themselves Monte-Carlo estimates, so the comparison cannot resolve below the reference estimator's own sampling error: ``floor'' is that error, measured by estimating the teacher's indices twice from independent samples, and ``holds'' tests measured $\le \Delta +$floor. Where floor~$>\Delta $ the experiment is limited by the reference, not by the bound.}}{8}{table.3}\protected@file@percent }
+\newlabel{tab:certificate}{{3}{8}{The certificate in practice (\GASPCE ). $\Delta (\hat \eta _\mu )=4\hat \eta _\mu /(1-\hat \eta _\mu )$ is the guaranteed bound and ``measured'' is $\max _j|T_j(\fS )-T_j(\fT )|$, the quantity in the second half of Eq.~\ref {eq:cert}. The teacher's indices are themselves Monte-Carlo estimates, so the comparison cannot resolve below the reference estimator's own sampling error: ``floor'' is that error, measured by estimating the teacher's indices twice from independent samples, and ``holds'' tests measured $\le \Delta +$floor. Where floor~$>\Delta $ the experiment is limited by the reference, not by the bound}{table.3}{}}
+\newlabel{tab:paired}{{5}{8}{(a) Fidelity, and who wins}{section*.17}{}}
+\@writefile{toc}{\contentsline {paragraph}{(d) The certificate holds, and is tight only at moderate $d$.}{8}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{(b) The interpretability/fidelity trade-off, and a negative result.}{8}{section*.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{(c) Explanation agreement, including where we lose.}{8}{section*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{The $\rho $-mixture: Proposition~\ref {prop:measure} in practice.}{9}{section*.21}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Where the students fail, and why.}{9}{section*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Limitations and conclusion}{9}{section.6}\protected@file@percent }
+\bibdata{references}
+\bibcite{adebayo2018}{{1}{2018}{{Adebayo et~al.}}{{Adebayo, Gilmer, Muelly, Goodfellow, Hardt, and Kim}}}
+\bibcite{agarwal2021}{{2}{2021}{{Agarwal et~al.}}{{Agarwal, Melnick, Frosst, Zhang, Lengerich, Caruana, and Hinton}}}
+\bibcite{blatman2011}{{3}{2011}{{Blatman and Sudret}}{{}}}
+\bibcite{borisov2024}{{4}{2024}{{Borisov et~al.}}{{Borisov, Leemann, Seßler, Haug, Pawelczyk, and Kasneci}}}
+\bibcite{bucilua2006}{{5}{2006}{{Buciluǎ et~al.}}{{Buciluǎ, Caruana, and Niculescu-Mizil}}}
+\bibcite{chang2022}{{6}{2022}{{Chang et~al.}}{{Chang, Caruana, and Goldenberg}}}
+\bibcite{frosst2017}{{7}{2017}{{Frosst and Hinton}}{{}}}
+\bibcite{gou2021}{{8}{2021}{{Gou et~al.}}{{Gou, Yu, Maybank, and Tao}}}
+\bibcite{hinton2015}{{9}{2015}{{Hinton et~al.}}{{Hinton, Vinyals, and Dean}}}
+\bibcite{hoeffding1948}{{10}{1948}{{Hoeffding}}{{}}}
+\bibcite{hooker2019}{{11}{2019}{{Hooker et~al.}}{{Hooker, Erhan, Kindermans, and Kim}}}
+\bibcite{jacovi2020}{{12}{2020}{{Jacovi and Goldberg}}{{}}}
+\bibcite{lou2012}{{13}{2012}{{Lou et~al.}}{{Lou, Caruana, and Gehrke}}}
+\bibcite{lou2013}{{14}{2013}{{Lou et~al.}}{{Lou, Caruana, Gehrke, and Hooker}}}
+\bibcite{lundberg2017}{{15}{2017}{{Lundberg and Lee}}{{}}}
+\bibcite{lundberg2020}{{16}{2020}{{Lundberg et~al.}}{{Lundberg, Erion, Chen, DeGrave, Prutkin, Nair, Katz, Himmelfarb, Bansal, and Lee}}}
+\bibcite{luthen2021}{{17}{2021}{{Lüthen et~al.}}{{Lüthen, Marelli, and Sudret}}}
+\bibcite{nauta2023}{{18}{2023}{{Nauta et~al.}}{{Nauta, Trienes, Pathak, Nguyen, Peters, Schmitt, Schlötterer, van Keulen, and Seifert}}}
+\bibcite{owen2014}{{19}{2014}{{Owen}}{{}}}
+\bibcite{rabitz1999}{{20}{1999}{{Rabitz and Ali\c {s}}}{{}}}
+\bibcite{razavi2021}{{21}{2021}{{Razavi et~al.}}{{Razavi, Jakeman, Saltelli, Prieur, Iooss, Borgonovo, Plischke, Lo~Piano, Iwanaga, Becker, Tarantola, Guillaume, Jakeman, Gupta, Melillo, Rabitti, Chabridon, Duan, Sun, Smith, Sheikholeslami, Hosseini, Asadzadeh, Puy, Kucherenko, and Maier}}}
+\bibcite{ribeiro2016}{{22}{2016}{{Ribeiro et~al.}}{{Ribeiro, Singh, and Guestrin}}}
+\bibcite{rudin2019}{{23}{2019}{{Rudin}}{{}}}
+\bibcite{sobol2001}{{24}{2001}{{Sobol'}}{{}}}
+\bibcite{sudret2008}{{25}{2008}{{Sudret}}{{}}}
+\bibcite{tan2018}{{26}{2018}{{Tan et~al.}}{{Tan, Caruana, Hooker, and Lou}}}
+\bibcite{xiu2002}{{27}{2002}{{Xiu and Karniadakis}}{{}}}
+\bibcite{yuan2006}{{28}{2006}{{Yuan and Lin}}{{}}}
+\bibstyle{iclr2026_conference}
+\citation{hoeffding1948,sobol2001}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Proof of Theorem~\ref {thm:cert}}{12}{appendix.A}\protected@file@percent }
+\newlabel{app:proof}{{A}{12}{Proof of Theorem~\ref {thm:cert}}{appendix.A}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {Left:} the index set $\mathcal  {A}$ partitioned by support. The group lasso of Eq.~\ref {eq:objective} acts on whole blocks, so the surviving model is always a valid HDMR truncation and the complexity axis counts \emph  {component functions}, not monomials. \textbf  {Right:} schematic of the frontier traced by sweeping $\lambda $ (axes unlabelled---this is an illustration of the object, not data). The horizontal asymptote is the irreducible bound set by the order-2 and top-$m$ truncation; the measured frontier is Fig.~\ref {fig:frontier}.}}{13}{figure.2}\protected@file@percent }
+\newlabel{fig:lattice}{{2}{13}{\textbf {Left:} the index set $\mathcal {A}$ partitioned by support. The group lasso of Eq.~\ref {eq:objective} acts on whole blocks, so the surviving model is always a valid HDMR truncation and the complexity axis counts \emph {component functions}, not monomials. \textbf {Right:} schematic of the frontier traced by sweeping $\lambda $ (axes unlabelled---this is an illustration of the object, not data). The horizontal asymptote is the irreducible bound set by the order-2 and top-$m$ truncation; the measured frontier is Fig.~\ref {fig:frontier}}{figure.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Left: the certified explanation frontier,} $\Delta (\hat  \eta _\mu )$ against surviving HDMR components as $\lambda $ sweeps, clipped at the vacuous level $\Delta =2$ (dashed; reached at $\eta =1/3$). bank-marketing buys a certificate of $0.34$ for $\approx \!80$ components and musk v2 one of $0.52$ for $\approx \!230$; credit-default plateaus near $1.06$; \emph  {gas-drift never leaves the vacuous region at any budget}, so on that dataset the method yields no usable guarantee. \textbf  {Right: the OP1 decoupling test.} Pooled across datasets, label agreement does track the certified residual ($\rho _s=-0.85$)---but the correlation is largely between datasets, and at matched agreement near $0.95$ the realised $\eta _\mu $ still spans roughly $0.1$ to $0.6$. Agreement is a correlated but insufficient proxy.}}{13}{figure.3}\protected@file@percent }
+\newlabel{fig:frontier}{{3}{13}{\textbf {Left: the certified explanation frontier,} $\Delta (\hat \eta _\mu )$ against surviving HDMR components as $\lambda $ sweeps, clipped at the vacuous level $\Delta =2$ (dashed; reached at $\eta =1/3$). bank-marketing buys a certificate of $0.34$ for $\approx \!80$ components and musk v2 one of $0.52$ for $\approx \!230$; credit-default plateaus near $1.06$; \emph {gas-drift never leaves the vacuous region at any budget}, so on that dataset the method yields no usable guarantee. \textbf {Right: the OP1 decoupling test.} Pooled across datasets, label agreement does track the certified residual ($\rho _s=-0.85$)---but the correlation is largely between datasets, and at matched agreement near $0.95$ the realised $\eta _\mu $ still spans roughly $0.1$ to $0.6$. Agreement is a correlated but insufficient proxy}{figure.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Corollary~\ref {cor:rank}.}{13}{section*.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Tightness.}{13}{section*.27}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {B}Implementation details and further results}{13}{appendix.B}\protected@file@percent }
+\newlabel{app:impl}{{B}{13}{Implementation details and further results}{appendix.B}{}}
+\@writefile{toc}{\contentsline {paragraph}{Solver.}{13}{section*.28}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Explanation agreement: each student's total-effect vector against the teacher's Monte-Carlo total Sobol' indices and against global KernelSHAP on the teacher. Spearman $\rho $ and top-10 Jaccard, mean $\pm $ s.d. over seeds.}}{14}{table.4}\protected@file@percent }
+\newlabel{tab:explanation}{{4}{14}{Explanation agreement: each student's total-effect vector against the teacher's Monte-Carlo total Sobol' indices and against global KernelSHAP on the teacher. Spearman $\rho $ and top-10 Jaccard, mean $\pm $ s.d. over seeds}{table.4}{}}
+\@writefile{toc}{\contentsline {paragraph}{Choosing the operating point.}{14}{section*.29}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Monte-Carlo reference indices.}{14}{section*.30}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Soft decision tree.}{14}{section*.31}\protected@file@percent }
+\newlabel{tab:stability}{{B}{14}{Soft decision tree}{section*.32}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Certificate audit over seeds. ``Holds'' is the exact (Clopper--Pearson) 95\% interval for the hold rate: ten successes out of ten establish a rate above about $0.69$, not $1.00$, and reporting $1.00\pm 0.00$ would overstate what ten seeds can show. Tightness and $\hat  \eta _\mu $ carry BCa bootstrap intervals over seeds. ``Vacuous'' is the fraction of \emph  {testable} seeds with $2\le \Delta <\infty $ -- the bound is sound but asserts no more than the $[0,1]$ range of a normalised index -- and ``floor$>\Delta $'' the fraction where the Monte-Carlo reference, not the bound, limits the comparison. Seeds with $\hat  \eta _\mu \ge 1$ are a separate state: the theorem's hypothesis fails, so they are neither tested nor counted vacuous, and the ``holds'' denominator shows the testable count against the total.}}{15}{table.5}\protected@file@percent }
+\newlabel{tab:certci}{{5}{15}{Certificate audit over seeds. ``Holds'' is the exact (Clopper--Pearson) 95\% interval for the hold rate: ten successes out of ten establish a rate above about $0.69$, not $1.00$, and reporting $1.00\pm 0.00$ would overstate what ten seeds can show. Tightness and $\hat \eta _\mu $ carry BCa bootstrap intervals over seeds. ``Vacuous'' is the fraction of \emph {testable} seeds with $2\le \Delta <\infty $ -- the bound is sound but asserts no more than the $[0,1]$ range of a normalised index -- and ``floor$>\Delta $'' the fraction where the Monte-Carlo reference, not the bound, limits the comparison. Seeds with $\hat \eta _\mu \ge 1$ are a separate state: the theorem's hypothesis fails, so they are neither tested nor counted vacuous, and the ``holds'' denominator shows the testable count against the total}{table.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Full configuration and measured wall-clock, emitted directly from the run records.}}{15}{table.6}\protected@file@percent }
+\newlabel{tab:hparams}{{6}{15}{Full configuration and measured wall-clock, emitted directly from the run records}{table.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Ablation over the product-measure query fraction $\rho $ (\textsc  {Gas-Pce}). The $\eta _\mu - \eta _\nu $ gap at $\rho =0$ is Proposition~3 in action: a student fitted only on the data manifold has no certificate.}}{15}{table.7}\protected@file@percent }
+\newlabel{tab:ablation-rho}{{7}{15}{Ablation over the product-measure query fraction $\rho $ (\GASPCE ). The $\eta _\mu - \eta _\nu $ gap at $\rho =0$ is Proposition~3 in action: a student fitted only on the data manifold has no certificate}{table.7}{}}
+\gdef \@abspage@last{15}

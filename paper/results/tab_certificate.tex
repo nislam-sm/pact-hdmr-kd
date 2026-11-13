@@ -1,0 +1,16 @@
+\begin{table}[t]
+\caption{The certificate in practice (\GASPCE). $\Delta(\hat\eta_\mu)=4\hat\eta_\mu/(1-\hat\eta_\mu)$ is the guaranteed bound and ``measured'' is $\max_j|T_j(\fS)-T_j(\fT)|$, the quantity in the second half of Eq.~\ref{eq:cert}. The teacher's indices are themselves Monte-Carlo estimates, so the comparison cannot resolve below the reference estimator's own sampling error: ``floor'' is that error, measured by estimating the teacher's indices twice from independent samples, and ``holds'' tests measured $\le\Delta+$floor. Where floor~$>\Delta$ the experiment is limited by the reference, not by the bound. Seeds with $\hat\eta_\mu\ge1$ are excluded from ``holds'' rather than scored: Theorem~\ref{thm:cert} assumes $\eta<1$, so there is no claim to test, and a comparison against an infinite bound would pass for free. Any such seeds are counted beneath the table.}
+\label{tab:certificate}
+\begin{center}\footnotesize
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+\textbf{Data} & $\hat\eta_\mu$ & $\Delta(\hat\eta_\mu)$ & \textbf{floor} & \textbf{measured} & \textbf{tightness} & \textbf{holds} \\
+\midrule
+bank-marketing & 0.166\,$\pm$\,0.044 & 0.809\,$\pm$\,0.250 & 0.017\,$\pm$\,0.017 & 0.407\,$\pm$\,0.170 & 0.595\,$\pm$\,0.445 & 0.90\,$\pm$\,0.32 \\
+credit-default & 0.264\,$\pm$\,0.050 & 1.457\,$\pm$\,0.381 & 0.023\,$\pm$\,0.019 & 0.159\,$\pm$\,0.051 & 0.112\,$\pm$\,0.039 & 1.00\,$\pm$\,0.00 \\
+gas-drift & 0.436\,$\pm$\,0.038 & 3.122\,$\pm$\,0.453 & 0.002\,$\pm$\,0.001 & 0.009\,$\pm$\,0.002 & 0.003\,$\pm$\,0.001 & 1.00\,$\pm$\,0.00 \\
+musk v2 & 0.278\,$\pm$\,0.076 & 1.587\,$\pm$\,0.520 & 0.012\,$\pm$\,0.014 & 0.016\,$\pm$\,0.010 & 0.014\,$\pm$\,0.015 & 1.00\,$\pm$\,0.00 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
